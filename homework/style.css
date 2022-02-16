@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #808080;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 10px;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.images .image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.images img.active {
+    opacity: 1;
+}
+
+::selection {
+    display: none;
+}
+
+.section {
+    margin-top: 120vh;
+}
+
+.row {
+    padding: 100px;
+}
+
+.block {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.block .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 300px;
+}
+
+.block .img .img1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.block .img .img1.slide {
+    opacity: 1;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    display: flex;
+    gap: 100px;
+}
+
+.buttons .btn {
+    padding: 10px 25px;
+    background: #00008b;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.4s;
+}
+
+.buttons .btn:hover {
+    opacity: 1;
+}
+
+.text {
+    margin-left: 550px;
+}
